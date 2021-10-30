@@ -1,5 +1,7 @@
 from torchvision import transforms
 from torchvision.io import read_image
+import torch
+import random
 '''
 Simulate monai's Dictionary Transforms writing 
 https://docs.monai.io/en/latest/transforms.html#dictionary-transforms
@@ -160,8 +162,7 @@ class Scale01d():
         return data  
 
     
-import torch
-class RandomGaussianNoise(object):
+class RandomGaussianNoise():
     def __init__(self, sig=0.01, p=0.5):
         self.sig = sig
         self.p = p
@@ -187,10 +188,8 @@ class RandGaussNoised(RandomGaussianNoise):
 
         return data
 
-    
-    
-import random    
-class GridMask(object):
+        
+class GridMask():
     def __init__(self, dmin=90, dmax=160, ratio=0.8, p=0.6):
         """Original Setting : dmin=90, dmax=300, ratio=0.7, p=0.5
         after augmentation, again masking with (90, 160, 0.8, 0.6) 
