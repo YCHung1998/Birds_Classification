@@ -21,7 +21,7 @@ lr_scheduler_gamma     = 0.8
 fold_list              = {'train' : ['training_images', 
                                      'training_images_HoriFlip'],
                           'valid' : ['training_images']}
-data_root              = r'/data/S/LinGroup/Users/sam/VRDL_HW1'
+data_root              = r'/data/S/LinGroup/Users/YC/VRDL_HW1'
 save_root              = r'/data/S/LinGroup/Users/YC/DL_HW1/record_' + time.strftime("%m%d_%H%M",time.localtime())
 output_record          = 'A_Record.txt'
 max_val_ep_acc         = [0,-1]
