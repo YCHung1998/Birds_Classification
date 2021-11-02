@@ -5,7 +5,7 @@ from src.Dataset import VRDL_BirdDataset
 
 T = Transforms()
 train_transforms, valid_transforms = T.train_transforms(), T.valid_transforms()
-data_root = r'/data/S/LinGroup/Users/sam/VRDL_HW1'
+data_root = r'/data/S/LinGroup/Users/YC/VRDL_HW1'
 def Prepare_data(MBS, fold_list, train_frame, valid_frame):
     train_set = VRDL_BirdDataset(data_root, fold_list['train'], train_frame, train_transforms)
     valid_set = VRDL_BirdDataset(data_root, fold_list['valid'], valid_frame, valid_transforms)
