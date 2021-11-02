@@ -22,7 +22,7 @@ class BirdDataset(Dataset):
         return len(self.df)
     
     def __getitem__(self, i, training=True):
-        data = {'image': os.path.join('/data/S/LinGroup/Users/sam/VRDL_HW1/testing_images', self.df[i].strip()),
+        data = {'image': os.path.join('/data/S/LinGroup/Users/YC/VRDL_HW1/testing_images', self.df[i].strip()),
                 'image_id': self.df[i].strip()}
         
         if self.transform:
@@ -43,10 +43,10 @@ def Net(path):
     return model
 
 
-with open('/data/S/LinGroup/Users/sam/VRDL_HW1/testing_img_order.txt', 'r') as f:
+with open('/data/S/LinGroup/Users/YC/VRDL_HW1/testing_img_order.txt', 'r') as f:
     content = f.readlines()
 
-with open('/data/S/LinGroup/Users/sam/VRDL_HW1/classes.txt', 'r') as f:
+with open('/data/S/LinGroup/Users/YC/VRDL_HW1/classes.txt', 'r') as f:
     name = f.readlines()
 
 T =  Transforms()
