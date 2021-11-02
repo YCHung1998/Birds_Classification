@@ -30,7 +30,7 @@ class VRDL_BirdDataset(Dataset):
 
 
 class Kth_Folder():
-    def __init__(self, k=1, txt_path=r'/data/S/LinGroup/Users/sam/VRDL_HW1/fold'):
+    def __init__(self, k=1, txt_path=r'/data/S/LinGroup/Users/YC/VRDL_HW1/fold'):
         self.k = k
         self.txt_path = txt_path
         self.fold_list = sorted(os.listdir(self.txt_path))
