@@ -78,7 +78,7 @@ for model_name in model_name_list:
         model_list.append(Net(os.path.join(folder, model_name)).eval())
 
 print('Waiting for a minutes ...')
-with open('/data/S/LinGroup/Users/YC/DL_HW1/answer.txt', 'w') as fp:
+with open('answer.txt', 'w') as fp:
     with torch.no_grad():
         for step, data in enumerate(test_loader):
             print(step)
