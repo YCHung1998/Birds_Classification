@@ -14,10 +14,10 @@ from src.Transform import (read_imaged,
                            Transforms)
 
 Model = 'resnet50'  # resnet50, densenet121
-folder = 'ckpt'
-test_path = r'/data/S/LinGroup/Users/YC/VRDL_HW1/testing_images'
-txt_path = r'/data/S/LinGroup/Users/YC/VRDL_HW1/testing_img_order.txt'
-classes_path = r'/data/S/LinGroup/Users/YC/VRDL_HW1/classes.txt'
+folder = 'model_saved'
+test_path = r'/data/testing_images'
+txt_path = r'/data/testing_img_order.txt'
+classes_path = r'/data/classes.txt'
 
 
 class BirdDataset(Dataset):
