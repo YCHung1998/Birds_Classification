@@ -5,11 +5,6 @@ Introduction: Bird images classification
 competition link : https://competitions.codalab.org/competitions/35668?secret_key=09789b13-35ec-4928-ac0f-6c86631dda07
 
 
----
-2222
----
-
-
 Requirements
 ---
 To install requirements:
