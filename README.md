@@ -21,8 +21,8 @@ torchvision                        0.9.1+cu101
 ```
 Folder structure
 ---
+```
 Root/
-
    
 ├──data
     │
@@ -47,7 +47,7 @@ Root/
 ├──Inference.py                            # inference your testing data, generate the answer
 ├──main_1_train.py                         # train your model
 └──README.md
-
+```
 
 Evaluation
 ---
