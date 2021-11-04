@@ -50,7 +50,7 @@ Pre-trained Models
 You can download pretrained models in model_saved:
 eg. ep=018-acc=0.7467.hdf5
 This name show that the best validation accuracy 0.7467 in the epoch 18. 
-My model trained and the model be named by **** Mini-batch size 20. optimizer is AdamW with learning rate = 1e-4, and the learning schedule = 1e-4 with 
+My model trained and the model be named by **Mini-batch size 20**. optimizer is AdamW with learning rate = 1e-4, and the learning schedule = 1e-4 with 
 
 
 Train
