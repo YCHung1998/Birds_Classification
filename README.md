@@ -6,18 +6,47 @@ competition link : https://competitions.codalab.org/competitions/35668?secret_ke
 
 
 ---
-dsdsd
+2222
 ---
 
-📋 A template README.md for code accompanying a Machine Learning paper
+
 Requirements
 ---
 To install requirements:
 ```
-pip install pytorch
-pip install torchvision
-
+pandas                             1.2.0
+numpy                              1.18.5
+torch                              1.8.1+cu101
+torchvision                        0.9.1+cu101
 ```
+Folder structure
+---
+Root/
+
+   
+├──data
+    │
+    ├── classes.txt
+    │    ├ 001.Black_footed_Albatross       # class name with the number
+    │    ├ 002.Laysan_Albatross
+    │    ├ ...
+    ├── testing_img_order.txt               # the testing images id you load to generate the answer.txt
+    │    ├ 4282.jpg
+    │    ├ 1704.jpg
+    │    ├ ...
+    ├── training_images                     # training image data 
+    │    ├ 0003.jpg                         
+    │    ├ 0008.jpg         
+    │    ├ ...
+    ├── testing_images                      # testing image data      
+    │    ├ 0001.jpg                         
+    │    ├ 0002.jpg
+    │    ├ ...
+├──model_saved                             # use 5 fold method saving the every best valid accuracy in each fold       
+├──src                                     # some source code inside 
+├──Inference.py                            # inference your testing data, generate the answer
+├──main_1_train.py                         # train your model
+└──README.md
 
 
 Evaluation
@@ -27,6 +56,18 @@ To evaluate my model on ImageNet, run:
 
 Pre-trained Models
 ---
-You can download pretrained models here:
-My awesome model trained on ImageNet using parameters Mini-batch size 20. optimizer is AdamW with learning rate = 1e-4, and the learning schedule = 1e-4 with 
-📋 Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable). Alternatively you can have an additional column in your results table with a link to the models.
+You can download pretrained models in model_saved:
+eg. ep=018-acc=0.7467.hdf5
+This name show that the best validation accuracy 0.7467 in the epoch 18  
+
+My model trained and the model be named by **** Mini-batch size 20. optimizer is AdamW with learning rate = 1e-4, and the learning schedule = 1e-4 with 
+
+```
+python main_1_train.py
+```
+
+
+
+---
+
+
