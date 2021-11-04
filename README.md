@@ -63,6 +63,7 @@ python main_1_train.py
 
 Inference
 ---
+While generate the answer.txt, it will count from 0 to 30.
 ```
 python Inference.py
 ```
